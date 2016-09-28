@@ -3,9 +3,9 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd">
 	<alternatives>
-		<stereotype>com.github.tyru.jaxrshelloapp.hello.stereotype.Controller</stereotype>
+		<stereotype>com.github.tyru.jaxrshelloapp.resource.hello.stereotype.Controller</stereotype>
 	</alternatives>
 	<interceptors>
-		<class>com.github.tyru.jaxrshelloapp.hello.interceptor.LoggingAroundInterceptor</class>
+		<class>com.github.tyru.jaxrshelloapp.resource.hello.interceptor.LoggingAroundInterceptor</class>
 	</interceptors>
 </beans>

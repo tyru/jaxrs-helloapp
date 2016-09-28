@@ -1,4 +1,4 @@
-package com.github.tyru.jaxrshelloapp.hello.interceptor;
+package com.github.tyru.jaxrshelloapp.resource.hello.interceptor;
 
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;

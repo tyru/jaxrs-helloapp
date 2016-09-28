@@ -1,4 +1,4 @@
-package com.github.tyru.jaxrshelloapp.hello.stereotype;
+package com.github.tyru.jaxrshelloapp.resource.hello.stereotype;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,7 +10,8 @@ import javax.enterprise.inject.Stereotype;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.Produces;
 
-import com.github.tyru.jaxrshelloapp.hello.interceptor.LoggingAround;
+import com.github.tyru.jaxrshelloapp.resource.hello.interceptor.LoggingAround;
+
 import javax.enterprise.inject.Alternative;
 
 

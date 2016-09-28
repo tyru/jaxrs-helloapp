@@ -5,7 +5,7 @@
 
 	<persistence-unit name="h2-unit" transaction-type="JTA">
 		<jta-data-source>java:/h2ds</jta-data-source>
-		<class>com.github.tyru.jaxrshelloapp.hello.HelloEntity</class>
+		<class>com.github.tyru.jaxrshelloapp.resource.hello.HelloEntity</class>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />

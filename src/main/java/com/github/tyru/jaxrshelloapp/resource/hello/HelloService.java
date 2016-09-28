@@ -1,4 +1,4 @@
-package com.github.tyru.jaxrshelloapp.hello;
+package com.github.tyru.jaxrshelloapp.resource.hello;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import javax.ws.rs.core.Response.Status;
 
 import org.slf4j.Logger;
 
-import com.github.tyru.jaxrshelloapp.hello.exception.HelloServiceExcepton;
+import com.github.tyru.jaxrshelloapp.resource.hello.exception.HelloServiceExcepton;
 import com.github.tyru.jaxrshelloapp.utils.LogUtils;
 
 @ApplicationScoped

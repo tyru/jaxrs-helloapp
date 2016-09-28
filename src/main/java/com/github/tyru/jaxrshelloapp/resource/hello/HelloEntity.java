@@ -1,4 +1,4 @@
-package com.github.tyru.jaxrshelloapp.hello;
+package com.github.tyru.jaxrshelloapp.resource.hello;
 
 import java.io.Serializable;
 

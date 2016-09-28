@@ -9,8 +9,8 @@ import javax.inject.Named;
 
 import org.json.JSONObject;
 
-import com.github.tyru.json.hyper.schema.HyperSchema;
-import com.github.tyru.json.hyper.schema.HyperSchemaBuilder;
+import me.tyru.json.hyper.schema.HyperSchema;
+import me.tyru.json.hyper.schema.HyperSchemaBuilder;
 
 /**
  * This producer is ApplicationScoped due to avoiding a disk I/O when reading a

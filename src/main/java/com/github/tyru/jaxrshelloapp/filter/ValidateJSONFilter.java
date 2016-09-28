@@ -18,7 +18,8 @@ import org.everit.json.schema.ValidationException;
 import org.slf4j.Logger;
 
 import com.github.tyru.jaxrshelloapp.utils.LogUtils;
-import com.github.tyru.json.hyper.schema.HyperSchema;
+
+import me.tyru.json.hyper.schema.HyperSchema;
 
 @Provider
 @Priority(Priorities.AUTHENTICATION)

@@ -1,4 +1,4 @@
-package com.github.tyru.jaxrshelloapp.hello.exception;
+package com.github.tyru.jaxrshelloapp.resource.hello.exception;
 
 import javax.ws.rs.core.Response;
 
