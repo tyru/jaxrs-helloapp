@@ -60,7 +60,7 @@
 
 		<!-- JSON Validator -->
 		<dependency>
-			<groupId>com.github.tyru.json-hyper-schema</groupId>
+			<groupId>me.tyru.json-hyper-schema</groupId>
 			<artifactId>json-hyper-schema</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
