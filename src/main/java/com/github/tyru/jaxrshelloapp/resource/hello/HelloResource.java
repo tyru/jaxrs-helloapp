@@ -17,7 +17,6 @@ import javax.ws.rs.core.UriInfo;
 
 import org.slf4j.Logger;
 
-import com.github.tyru.jaxrshelloapp.filter.ValidateJSON;
 import com.github.tyru.jaxrshelloapp.resource.hello.exception.HelloServiceExcepton;
 import com.github.tyru.jaxrshelloapp.resource.hello.stereotype.Controller;
 import com.github.tyru.jaxrshelloapp.utils.LogUtils;
@@ -62,7 +61,6 @@ public class HelloResource {
 	}
 
 	@POST
-	@ValidateJSON
 	public Response addMsg(HelloEntity hello) {
 		try {
 			service.addMsg(hello);
@@ -76,7 +74,6 @@ public class HelloResource {
 
 	@DELETE
 	@Path("{lang}")
-	@ValidateJSON
 	public Response deleteMsg(@PathParam("lang") String lang) {
 		service.deleteMsg(lang);
 		return Response.noContent().build();

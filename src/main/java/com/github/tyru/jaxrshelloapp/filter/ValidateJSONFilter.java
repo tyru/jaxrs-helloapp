@@ -23,7 +23,6 @@ import me.tyru.json.hyper.schema.HyperSchema;
 
 @Provider
 @Priority(Priorities.AUTHENTICATION)
-@ValidateJSON
 @RequestScoped
 public class ValidateJSONFilter implements ContainerRequestFilter {
 
