@@ -19,7 +19,7 @@
 		{
 			"rel": "instances",
 			"method": "GET",
-			"href": "/hello",
+			"href": "/api/v1/hello",
 			"targetSchema": {
 				"type": "array",
 				"items": {
@@ -30,7 +30,7 @@
 		{
 			"rel": "self",
 			"method": "GET",
-			"href": "/hello/{lang}",
+			"href": "/api/v1/hello/{lang}",
 			"targetSchema": {
 				"$ref": "#hello"
 			}
@@ -38,7 +38,7 @@
 		{
 			"rel": "create",
 			"method": "POST",
-			"href": "/hello",
+			"href": "/api/v1/hello",
 			"schema": {
 				"type": "object",
 				"properties": {
@@ -58,7 +58,7 @@
 		{
 			"rel": "delete_hello",
 			"method": "DELETE",
-			"href": "/hello/{lang}"
+			"href": "/api/v1/hello/{lang}"
 		}
 	]
 }
