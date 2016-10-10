@@ -9,6 +9,8 @@ import javax.inject.Named;
 
 import org.apache.commons.io.IOUtils;
 
+import com.github.tyru.jaxrshelloapp.HelloApp;
+
 /**
  * This producer is ApplicationScoped due to avoiding a disk I/O when reading a
  * json schema file.
@@ -22,7 +24,7 @@ class RawHyperSchemaProducer {
 	@Named("RawHyperSchema")
 	@Produces
 	public String getRawHyperSchema() throws IOException {
-		try (InputStream inputStream = getClass().getResourceAsStream("/schemas/hello-schema.json")) {
+		try (InputStream inputStream = getClass().getResourceAsStream(HelloApp.JSON_HYPER_SCHEMA_FILE)) {
 			return IOUtils.toString(inputStream);
 		}
 	}

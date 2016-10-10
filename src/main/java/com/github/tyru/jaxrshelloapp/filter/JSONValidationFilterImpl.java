@@ -9,16 +9,19 @@ import javax.inject.Named;
 import javax.ws.rs.Priorities;
 import javax.ws.rs.ext.Provider;
 
+import com.github.tyru.jaxrshelloapp.HelloApp;
+
 import me.tyru.json.hyper.schema.HyperSchema;
-import me.tyru.json.hyper.schema.filter.AbstractJSONValidationFilter;
+import me.tyru.json.hyper.schema.HyperSchemaBuilder;
+import me.tyru.json.hyper.schema.filter.AbstractJaxrsJSONValidationFilter;
 
 @Provider
 @Priority(Priorities.AUTHENTICATION)
 @ApplicationScoped
-public class JSONValidationFilterImpl extends AbstractJSONValidationFilter {
-	@Named("JSONValidationFilter.hyperSchema")
+public class JSONValidationFilterImpl extends AbstractJaxrsJSONValidationFilter {
+	@Named("AbstractJaxrsJSONValidationFilter.hyperSchema")
 	@Produces
 	public HyperSchema injectHyperSchema() throws IOException {
-		return createHyperSchema("/schemas/hello-schema.json");
+		return HyperSchemaBuilder.createHyperSchema(HelloApp.JSON_HYPER_SCHEMA_FILE);
 	}
 }

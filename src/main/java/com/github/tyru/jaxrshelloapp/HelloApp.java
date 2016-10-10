@@ -11,4 +11,6 @@ import javax.ws.rs.core.Application;
 //        className = "org.h2.jdbcx.JdbcDataSource",
 //        url = "jdbc:h2:mem:test;DB_CLOSE_DELAY=-1")
 public class HelloApp extends Application {
+
+	public static final String JSON_HYPER_SCHEMA_FILE = "/schemas/hello-schema.json";
 }
