@@ -1,26 +1,22 @@
 package com.github.tyru.jaxrshelloapp.producer;
 
-import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.enterprise.inject.Produces;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 
-@ApplicationScoped
+/**
+ * This produces @RequestScoped EntityManager.
+ * Because it is a bother to manage @ApplicationScoped EntityManager
+ * which is not thread-safe.
+ *
+ * @author tyru
+ *
+ */
+@RequestScoped
 class EntityManagerProducer {
-
 	@Produces
-	public EntityManager getEntityManager() {
-		return EntityManagerSingleton.INSTANCE.get();
-	}
-
-	private static enum EntityManagerSingleton {
-		INSTANCE;
-		private EntityManager em;
-		private EntityManagerSingleton() {
-			em = Persistence.createEntityManagerFactory("h2-unit").createEntityManager();
-		}
-		public EntityManager get() {
-			return em;
-		}
+	private EntityManager getEntityManager() {
+		return Persistence.createEntityManagerFactory("h2-unit").createEntityManager();
 	}
 }
